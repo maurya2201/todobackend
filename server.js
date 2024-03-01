@@ -7,11 +7,7 @@ dbConnect();
 const morgan = require("morgan");
 const router = require('./route/route');
 const cors = require("cors");
-app.use(
-  cors({
-    origin: "https://todoapp-mauryasoni.vercel.app/",
-  })
-);
+app.use(cors())
 
 
 app.use(morgan("dev"));
